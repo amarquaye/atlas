@@ -16,7 +16,10 @@ Its main focus is on **generative text** as that is the most widely used medium 
 
 ### Why work on hallucination in LLMs?
 
-Large language models (LLMs) are revolutionizing human-computer interaction, generating increasingly _fluent_ and _human-like text_. However, a significant challenge in LLMs is their tendency to produce **hallucinations**, or factually incorrect, nonsensical, or misleading content. As humans become increasingly reliant on LLMs for information and decision-making, ensuring their reliability and accuracy is crucial. This project aims to address this challenge by developing a software for **detecting** and **mitigating** hallucinations in LLMs so users can rely on LLM outputs with greater confidence, leading to wider adoption and societal benefits and also reduces the risk of misinformation and promotes responsible use of LLMs.
+Large language models (LLMs) are revolutionizing human-computer interaction, generating increasingly _fluent_ and _human-like text_. 
+However, a significant challenge in LLMs is their tendency to produce **hallucinations**, or factually incorrect, nonsensical, or misleading content. 
+As humans become increasingly reliant on LLMs for information and decision-making, ensuring their reliability and accuracy is crucial. 
+This project aims to address this challenge by developing a software for **detecting** and **mitigating** hallucinations in LLMs so users can rely on LLM outputs with greater confidence, leading to wider adoption and societal benefits and also reduces the risk of misinformation and promotes responsible use of LLMs.
 
 ### Aims or Objectives
 
