@@ -26,4 +26,4 @@ Large language models (LLMs) are revolutionizing human-computer interaction, gen
 
 ## Methodology
 
-![Flow diagram](docs/img/flow.svg)
+![Flow diagram](docs/img/flow.png)
