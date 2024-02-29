@@ -60,3 +60,7 @@ An additional feature (probably in the future) will be to find the sources of th
 ![Flow diagram](docs/img/flow.svg)
 
 </details>
+
+### Our Plan
+
+- [ ] Create a website to test how atlas will function.
