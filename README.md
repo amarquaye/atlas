@@ -63,7 +63,7 @@ An additional feature (probably in the future) will be to find the sources of th
 
 ### What we plan to do
 
-- [ ] Create a website to test how atlas will detect hallucinations in LLMs.
+- [ ] Create a site to test how atlas will detect hallucinations in LLMs.
 - [ ] Create browser extension to finally test how atlas will operate.
 
 ### What we do not plan to do
