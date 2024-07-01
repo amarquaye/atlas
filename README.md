@@ -73,11 +73,11 @@ An additional feature (probably in the future) will be to find the sources of th
 
 ### Plan
 
-- [x] Develop an api to search the web. Click to [try it out](https://atlasproject-brown.vercel.app/docs "Test the API").
+- [x] Develop an API to search the web. Click to [try it out](https://atlasproject-brown.vercel.app/docs "Test the API").
 - [ ] Scrape the contents of the resulting links from the search.
 - [ ] Summarize the contents of the extracted text.
 - [ ] Identify the difference between the LLM's response and the results from our search.
 - [ ] Prompt the user of potential hallucinations if any are detected.
-- [ ] Mitigate by allowing the user to dive deeper and if he or she is satisfied, substitute the LLM's response with ours.
+- [ ] Mitigate by allowing the users to delve deeper and if they are satisfied, substitute the LLM's response with ours.
 - [ ] Create a site to test how atlas will detect hallucinations in LLMs.
 - [ ] Create browser extension to finally test how atlas will operate.
