@@ -74,7 +74,7 @@ An additional feature (probably in the future) will be to find the sources of th
 ### Plan
 
 - [x] Develop an API to search the web. Click to [try it out](https://atlasproject-brown.vercel.app/docs "Test the API").
-- [ ] Scrape the contents of the resulting links from the search.
+- [x] Scrape the contents of the resulting links from the search.
 - [ ] Summarize the contents of the extracted text.
 - [ ] Identify the difference between the LLM's response and the results from our search.
 - [ ] Prompt the user of potential hallucinations if any are detected.
