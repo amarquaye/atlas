@@ -43,8 +43,8 @@ software that can handle the weight of complex language processing tasks with st
 ### Aims or Objectives
 
 - [x] Explore techniques for mitigating hallucinations in LLMs.
-- [ ] Develop a software for automatic detection of hallucinations in LLMs.
-- [ ] Evaluate the effectiveness of the developed tool in different LLMs.
+- [x] Develop a software for automatic detection of hallucinations in LLMs.
+- [x] Evaluate the effectiveness of the developed tool in different LLMs.
 
 ## Methodology
 
@@ -75,9 +75,9 @@ An additional feature (probably in the future) will be to find the sources of th
 
 - [x] Develop an API to search the web. Click to [try it out](https://atlasproject-brown.vercel.app/docs "Test the API").
 - [x] Scrape the contents of the resulting links from the search.
-- [ ] Summarize the contents of the extracted text.
-- [ ] Identify the difference between the LLM's response and the results from our search.
-- [ ] Prompt the user of potential hallucinations if any are detected.
+- [x] Summarize the contents of the extracted text.
+- [x] Identify the difference between the LLM's response and the results from our search.
+- [x] Prompt the user of potential hallucinations if any are detected.
 - [ ] Mitigate by allowing the users to delve deeper and if they are satisfied, substitute the LLM's response with ours.
-- [ ] Create a site to test how atlas will detect hallucinations in LLMs.
-- [ ] Create browser extension to finally test how atlas will operate.
+- [x] Create a site to test how atlas will detect hallucinations in LLMs.
+- [x] Create browser extension to finally test how atlas will operate.
