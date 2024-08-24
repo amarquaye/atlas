@@ -58,7 +58,7 @@ An additional feature (probably in the future) will be to find the sources of th
 
 <summary> View Flow Diagram </summary>
 
-![Flow diagram](docs/img/flow.svg)
+![Flow diagram](assets/img/flow.svg)
 
 </details>
 
