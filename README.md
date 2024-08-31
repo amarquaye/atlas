@@ -11,6 +11,10 @@ computer engineering students from [Ghana Communication Technology University](h
   - [Aims or Objectives](#aims-or-objectives)
 - [Methodology](#methodology)
   - [Plan](#plan)
+- [Results And Analysis](#results-and-analysis)
+- [Conclusion](#conclusion)
+- [Future Works](#future-works)
+- [References](#references)
 
 ## Introduction
 
@@ -50,9 +54,9 @@ software that can handle the weight of complex language processing tasks with st
 
 Our approach will be the design and implementation of a software to detect or flag and mitigate
 hallucinations in LLMs.
-The ultimate objective is the creation of a browser extension to actively scan the output from LLMs and
+The ultimate objective is the creation of a ~~browser extension~~ or [website](https://atlasproject-phi.vercel.app "View site") to
+actively scan the output from LLMs and
 compare them with results from trusted sources on the web and inform the user of any occurrence of hallucinations.
-An additional feature (probably in the future) will be to find the sources of the response the LLM generated.
 
 <details>
 
@@ -73,11 +77,68 @@ An additional feature (probably in the future) will be to find the sources of th
 
 ### Plan
 
-- [x] Develop an API to search the web. Click to [try it out](https://atlasproject-brown.vercel.app/docs "Test the API").
+- [x] Develop an API to search the web. Click to [try it out](https://atlasproject-phi.vercel.app/docs "Test the API").
 - [x] Scrape the contents of the resulting links from the search.
 - [x] Summarize the contents of the extracted text.
 - [x] Identify the difference between the LLM's response and the results from our search.
 - [x] Prompt the user of potential hallucinations if any are detected.
-- [ ] Mitigate by allowing the users to delve deeper and if they are satisfied, substitute the LLM's response with ours.
+- [x] Mitigate by allowing the users to delve deeper and if they are satisfied, substitute the LLM's response with ours.
 - [x] Create a site to test how atlas will detect hallucinations in LLMs.
 - [x] Create browser extension to finally test how atlas will operate.
+
+## Results And Analysis
+
+During our tests or evaluations we use two of the most popular LLMs, OpenAI's [ChatGPT](https://chatgpt.com "ChatGPT") and
+Google's [Gemini](https://gemini.google.com "Gemini").
+
+- ChatGPT returned **120** accurate responses out of 200.
+- Gemini returned **98** accurate responses out of 200.
+
+- Both LLMs returned **82** responses that were hallucinations(even though they happened for different questions).
+
+We noticed that _ChatGPT was more accurate than Gemini_ in most cases and Gemini was more prone to hallucinations.
+
+ChatGPT seems to be trained on more data than Gemini and Gemini tried to avoid certain questions but ChatGPT answered all the questions
+it could.
+
+The following charts show the results mentioned above.
+
+Number of accurate responses in LLM responses.
+![LLM Benchmark](assets/img/llm_benchmark_bc.png)
+
+Percentage of hallucinations in LLM responses.
+![LLM Benchmark](assets/img/llm_benchmark_pc.png)
+
+## Conclusion
+
+We were able to create a tool that can detect hallucinations in LLMs.
+Our tool successfully detects almost all the hallucinations in LLMs.
+However, our tool is not perfect and can still be improved since not all information is on the internet and some are inaccurate or contain
+biases.
+
+## Future Works
+
+Future works can use this [methodology](https://github.com/amarquaye/atlas-api "Our source code") and combine with other techniques to improve the accuracy of hallucinations detection.
+
+## References
+
+- [A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation](https://arxiv.org/pdf/2307.03987)
+- [Automatic Calibration and Error Correction for Generative Large Language Models via Pareto Optimal Self-Supervision](https://openreview.net/pdf?id=vg7dECgAw2)
+- [Check Your Facts and Try Again Improving Large Language Models with External Knowledge and Automated Feedback](https://arxiv.org/pdf/2302.12813)
+- [Constructing Benchmarks and Interventions for Combating Hallucinations in LLMs](https://arxiv.org/pdf/2404.09971)
+- [Ever: Mitigating Hallucination in Large Language Models through Real-Time Verification and Rectification](https://arxiv.org/pdf/2311.09114)
+- [HILL: A Hallucination Identifier for Large Language Models](https://arxiv.org/pdf/2403.06710)
+- [HalluVault: A Novel Logic Programming-aided Metamorphic Testing Framework for Detecting Fact-Conflicting Hallucinations in Large Language Models](https://arxiv.org/pdf/2405.00648)
+- [Hallucination Detection: Robustly Discerning Reliable Answers in Large Language Models](https://arxiv.org/pdf/2407.04121)
+- [Hallucination Reduction in Large Language Models with Retrieval-Augmented Generation Using Wikipedia Knowledge](https://osf.io/pv7r5/download/?format=pdf)
+- [KnowHalu: Hallucination Detection via Multi-Form Knowledge Based Factual Checking](https://arxiv.org/pdf/2404.02935)
+- [Lynx: An Open Source Hallucination Evaluation Model](https://arxiv.org/pdf/2407.08488)
+- [Mitigating Entity-Level Hallucination in Large Language Models](https://arxiv.org/pdf/2407.09417)
+- [Mitigating Hallucinations in Large Language Models via Self-Refinement-Enhanced Knowledge Retrieval](https://arxiv.org/pdf/2405.06545)
+- [Reducing Hallucinations in Large Language Models A Consensus Voting Approach Using Mixture of Experts](https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.171925057.75949684/v1)
+- [Reducing Hallucinations in Large Language Models Through Contextual Position Encoding](https://osf.io/exjqb/download)
+- [Self-Contradictory Hallucinations of LLMs Evaluation, Detection and Mitigation](https://arxiv.org/pdf/2305.15852)
+- [The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models](https://arxiv.org/pdf/2401.03205)
+- [The Troubling Emergence of Hallucination in Large Language Models – An Extensive Definition, Quantification, and Prescriptive Remediations](https://arxiv.org/pdf/2310.04988)
+- [Truth-Aware Context Selection: Mitigating the Hallucinations of Large Language Models Being Misled by Untruthful Contexts](https://arxiv.org/pdf/2403.07556)
+- [Zero-Shot Multi-task Hallucination Detection](https://arxiv.org/pdf/2403.12244)
