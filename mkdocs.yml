@@ -1,0 +1,75 @@
+site_name: ATLAS
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  icon:
+    logo: logo
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  plugins:
+    - glightbox
+    - typeset
+    - search
+  palette:
+      # Palette toggle for dark mode 
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      
+      # Palette toggle for light mode 
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+copyright: Copyright &copy; 2024 Jesse Amarquaye
+extra:
+  social:
+    - icon: github
+      link: https://github.com/amarquaye
+    - icon: linkedin
+      link: https://www.linkedin.com/in/amarquaye/
+    - icon: x
+      link: https://x.com/llordjesse
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - toc:
+     permalink: true
