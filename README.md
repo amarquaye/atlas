@@ -116,6 +116,10 @@ Our tool successfully detects almost all the hallucinations in LLMs.
 However, our tool is not perfect and can still be improved since not all information is on the internet and some are inaccurate or contain
 biases.
 
+Take a look at our [technical documentation](https://amarquaye.github.io/atlas/ "View technical documentation") or try
+our [interactive documentation](https://atlasproject-phi.vercel.app/docs "View interactive documentation") or visit our
+[website](https://atlasproject-phi.vercel.app "View website") to learn more about the ATLAS project.
+
 ## Future Works
 
 Future works can use this [methodology](https://github.com/amarquaye/atlas-api "Our source code") and combine with other techniques to improve the accuracy of hallucinations detection.
